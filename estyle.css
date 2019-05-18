@@ -1,0 +1,101 @@
+#frontBody {
+    background-image: url("images/block-illusion-gif.gif");
+}
+
+body {
+    background: rgb(43, 44, 44);
+    background-image: url("images/block-illusion-gif.gif");
+    background-position: 50% 0%;
+    background-repeat: repeat;
+    font-size: 15px;
+    -webkit-animation: backdrop 1.8s .03s;
+    animation: backdrop 1.8s .03s;
+    background-size: 100% 42rem, cover;
+}
+
+#playersInput {
+    color: rgb(123, 123, 123);
+    border-radius: .4rem;
+    font-weight: bold;
+    font-size: 3.6rem;
+    position: absolute;
+    text-align: center;
+    text-shadow: 3px 2px rgb(45, 37, 37);
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    width: 80px;
+    height: 80px;
+    background-color: rgb(62, 55, 52);
+    -webkit-animation: example 10s .5s infinite cubic-bezier(0, 0, 0, 0) linear;
+    animation: example .7s .03s infinite cubic-bezier(0, 0, 0, 0) linear;
+}
+
+#playersInput:hover {
+    color: rgb(186, 185, 185);
+}
+
+.enter {
+    color: rgb(123, 123, 123);
+    border-radius: .4rem;
+    font-weight: bold;
+    font-size: 3rem;
+    position: absolute;
+    text-align: center;
+    line-height: 4rem;
+    text-shadow: 3px 2px rgb(45, 37, 37);
+    top: calc(70% - 50px);
+    left: calc(50% - 50px);
+    width: 80px;
+    height: 200px;
+    background-color: rgb(62, 55, 52);
+    -webkit-animation: example 10s .5s infinite cubic-bezier(0, 0, 0, 0) alternate-reverse;
+    animation: example .7s .03s infinite cubic-bezier(0, 0, 0, 0) alternate-reverse;
+}
+
+.enter:hover {
+    color: rgb(186, 185, 185);
+}
+
+@-webkit-keyframes example {
+    from {
+        color: rgb(186, 185, 185);
+        font-size: 3rem;
+    }
+    to {
+        color: rgb(36, 36, 36);
+        font-size: 3.7rem;
+    }
+}
+
+@keyframes example {
+    from {
+        color: rgb(186, 185, 185);
+        font-size: 3rem;
+    }
+    to {
+        color: rgb(36, 36, 36);
+        font-size: 3.7rem;
+    }
+}
+
+@-webkit-keyframes backdrop {
+    10% {
+        background-size: 100% 0px, cover;
+        background-color: rgb(186, 185, 185);
+    }
+    100% {
+        background-size: 100% 650px, cover;
+        background-color: rgb(36, 36, 36);
+    }
+}
+
+@keyframes backdrop {
+    10% {
+        background-size: 100% 0px, cover;
+        background-color: rgb(186, 185, 185);
+    }
+    100% {
+        background-size: 100% 650px, cover;
+        background-color: rgb(36, 36, 36);
+    }
+}
